@@ -1,11 +1,11 @@
 /** Classe abstraite représentant une opération mathématique. */
-public abstract class Operation {
+public abstract class Operation extends Expression {
     // Les opérandes de l'opération
-    private Nombre operande1;
-    private Nombre operande2;
+    private Expression operande1;
+    private Expression operande2;
 
     /** Constructeur de la classe Operation. */
-    public Operation(Nombre UneOperande1, Nombre UneOperande2) {
+    public Operation(Expression UneOperande1, Expression UneOperande2) {
         this.operande1 = UneOperande1;
         this.operande2 = UneOperande2;
     }
