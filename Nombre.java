@@ -8,7 +8,7 @@ public class Nombre {
     /**
         Constructeur de la classe Nombre.
     */
-    public Nombre(int UneValeur) 
+    public Nombre(Nombre UneValeur) 
     {
         this.valeurNombre = UneValeur;
     }

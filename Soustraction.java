@@ -7,7 +7,7 @@ public class Soustraction extends Operation
     /**
         Constructeur de la classe Soustraction.
     */
-    public Soustraction(Nombre operande1, Nombre operande2) 
+    public Soustraction(Expression operande1, Expression operande2) 
     {
         // Appelle le constructeur de la classe mère avec les opérandes donnés.
         super(operande1, operande2);

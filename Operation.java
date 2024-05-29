@@ -14,12 +14,12 @@ public abstract class Operation extends Expression {
     public abstract int valeur();
 
     /** Getter pour obtenir le premier opérande de l'opération.*/
-    public Nombre getOperande1() {
+    public Expression getOperande1() {
         return this.operande1;
     }
 
     /** Getter pour obtenir le deuxième opérande de l'opération.*/
-    public Nombre getOperande2() {
+    public Expression getOperande2() {
         return this.operande2;
     }
 }

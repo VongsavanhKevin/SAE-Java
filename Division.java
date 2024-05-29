@@ -7,7 +7,7 @@ public class Division extends Operation {
     /**
         Constructeur de la classe Division.
     */
-    public Division(Nombre operande1, Nombre operande2) {
+    public Division(Expression operande1, Expression operande2) {
         // Appelle le constructeur de la classe mère avec les opérandes donnés.
         super(operande1, operande2);
     }
