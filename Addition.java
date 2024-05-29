@@ -15,7 +15,7 @@ public class Addition extends Operation {
     /**
         Méthode permettant de calculer la valeur de l'addition.
     */
-    public int valeur() {
+    public double valeur() {
         
         return getOperande1().valeur() + getOperande2().valeur(); // Additionne les valeurs des deux opérandes.
     }

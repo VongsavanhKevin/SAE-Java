@@ -17,7 +17,7 @@ public class Division extends Operation {
         Return Le résultat de la division.
         ArithmeticException si le dénominateur est nul.
     */
-    public int valeur() throws ArithmeticException {
+    public double valeur() throws ArithmeticException {
         // Vérifie si le dénominateur est nul.
         if (getOperande2().valeur() == 0) {
             // Lance une exception si le dénominateur est nul.

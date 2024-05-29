@@ -16,7 +16,7 @@ public class Soustraction extends Operation
     /**
         Méthode permettant de calculer la valeur de la soustraction.
     */
-    public int valeur() 
+    public double valeur() 
     {
         // Soustrait la valeur du deuxième opérande à la valeur du premier opérande.
         return getOperande1().valeur() - getOperande2().valeur();

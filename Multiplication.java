@@ -15,7 +15,7 @@ public class Multiplication extends Operation
     /**
         Calcule et retourne la valeur de la multiplication des deux opérandes.
     */
-    public int valeur()
+    public double valeur()
     {
         return getOperande1().valeur() * getOperande2().valeur();
     }
