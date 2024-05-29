@@ -28,3 +28,5 @@ public class Addition extends Operation {
         return "L'addition de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " est égal à " + this.valeur();
     }
 }
+
+/** Olive  */
