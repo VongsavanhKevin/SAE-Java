@@ -1,22 +1,26 @@
 /**
     Classe représentant un nombre entier.
 */
-public class Nombre {
+public class Nombre extends Expression{
     // La valeur du nombre
     private int valeurNombre;
 
     /**
         Constructeur de la classe Nombre.
     */
-    public Nombre(Nombre UneValeur) 
+    public Nombre(Nombre uneValeur) 
     {
-        this.valeurNombre = UneValeur;
+        this.valeurNombre = uneValeur.valeurNombre;
     }
-
+    
+    public Nombre(int uneValeur) 
+    {
+        this.valeurNombre = uneValeur;
+    }
     /**
         Méthode permettant d'obtenir la valeur du nombre.
     */
-    public int valeur() 
+    public double valeur() 
     {
         return this.valeurNombre;
     }
@@ -27,7 +31,9 @@ public class Nombre {
     public String toString() 
     {
         // Utilise la valeur du nombre pour créer une chaîne descriptive.
-        return "La valeur du nombre est : " + this.valeur() + "\n";
+        return "" + this.valeurNombre;
+
+        /* return "La valeur du nombre est : " + this.valeur() + "\n";*/
     }
 }
 

@@ -7,7 +7,7 @@ public class Multiplication extends Operation
     /**
         Constructeur de la classe Multiplication.
     */
-    public Multiplication(Expression operande1 , Expression operande2)
+    public Multiplication(Expression operande1, Expression operande2)
     {
         super(operande1, operande2);
     }
@@ -25,6 +25,12 @@ public class Multiplication extends Operation
     */
     public String toString()
     {
-        return "La multiplication de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " est égale à " + this.valeur();
+        /** toString pour l'affichage d'un exemple de l'exercice */
+        return "(" + getOperande1().toString() + " * " + getOperande2().toString() + ")";
+
+        /**
+        Utilisation d'un toString basique  
+        return "La multiplication de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " donne " + this.valeur();
+        */
     }
 }

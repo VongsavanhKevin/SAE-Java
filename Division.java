@@ -31,7 +31,12 @@ public class Division extends Operation {
         Méthode permettant de représenter l'opération de division sous forme de chaîne de caractères.
     */
     public String toString() {
+        /** toString pour l'affichage d'un exemple de l'exercice */
+        return "(" + getOperande1().toString() + " / " + getOperande2().toString() + ")";
         
-        return "La division de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " est égal à " + this.valeur();
+        /** 
+        Utilisation d'un toString basique  
+        return "La divison de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " donne " + this.valeur(); 
+        */
     }
 }

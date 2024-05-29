@@ -25,7 +25,14 @@ public class Addition extends Operation {
     */
     public String toString() {
         // Utilise les valeurs des opérandes et le résultat de l'addition pour créer une chaîne descriptive.
-        return "L'addition de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " est égal à " + this.valeur();
+        
+        /** toString pour l'affichage d'un exemple de l'exercice */
+        return "(" + getOperande1().toString() + " + " + getOperande2().toString() + ")";
+
+        /** 
+        Une structure pour le toString basique
+        return "L'addition de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " donne " + this.valeur(); 
+        */
     }
 }
 

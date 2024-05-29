@@ -11,7 +11,7 @@ public abstract class Operation extends Expression {
     }
 
     /** Méthode abstraite représentant le calcul de la valeur de l'opération.*/
-    public abstract int valeur();
+    public abstract double valeur();
 
     /** Getter pour obtenir le premier opérande de l'opération.*/
     public Expression getOperande1() {
@@ -22,4 +22,7 @@ public abstract class Operation extends Expression {
     public Expression getOperande2() {
         return this.operande2;
     }
+    /** toString abstraite permettant redéfiniton pour classe filles */
+    public abstract String toString();
+
 }

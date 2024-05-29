@@ -28,6 +28,12 @@ public class Soustraction extends Operation
     public String toString() 
     {
         // Utilise les valeurs des opérandes et le résultat de la soustraction pour créer une chaîne descriptive.
-        return "La soustraction de " + getOperande1().valeur() + " par " + getOperande2().valeur() + " est égal à " + this.valeur();
+        /** toString pour l'affichage d'un exemple de l'exercice */
+        return "(" + getOperande1().toString() + " - " + getOperande2().toString() + ")";
+
+        /**
+        Utilisation d'un toString basique
+        return "La soustraction de" + getOperande1().valeur() + " par " + getOperande2().valeur() + " donne " + this.valeur();
+        */
     }
 }
